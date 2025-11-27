@@ -1,14 +1,21 @@
-# ETF Tokenizado — MVP em Vyper + Oracle em Python
+# ETF Tokenizado — MVP de Tokenized Ownership com Vyper + Oracle Off-chain
 
-Este repositório contém um MVP funcional de um **ETF tokenizado** usando:
+Este repositório implementa um **MVP conceitual de um ETF tokenizado on-chain**, inspirado no funcionamento do **mercado primário de ETFs tradicionais**, mas adaptado para o contexto de **Tokenized Ownership**.
 
-- **Contratos Vyper** para:
-  - Tokens mock (representando ações)
-  - Oráculo on-chain
-  - Contrato ETF que lê preços e calcula o valor da cota
-- **Script Python** que busca preços reais (Yahoo Finance) e envia para o oráculo
+O projeto demonstra como um ETF poderia existir **inteiramente na blockchain**, tendo:
 
-O objetivo é demonstrar, de forma simples e didática, como seria uma arquitetura mínima de um ETF totalmente on-chain.
+- **Ativos tokenizados** (simulados via ERC-20 mock)
+- **Um oráculo próprio**, controlado pelo emissor, que alimenta preços de ativos
+- **Integração off-chain** com dados de mercado reais (Yahoo Finance)
+- **Um contrato ETF** que usa esses preços para calcular o valor da cota on-chain
+
+A implementação tem propósito **didático**, servindo como estudo sobre:
+- arquitetura mínima de smart contracts,
+- fluxo off-chain → on-chain,
+- tokenização de ativos financeiros,
+- e separação entre *oráculo*, *ativos subjacentes* e *contrato agregador*.
+
+Este MVP **não replica um ETF real**, mas mostra de forma clara as peças essenciais que apareceriam em uma arquitetura profissional.
 
 ---
 
