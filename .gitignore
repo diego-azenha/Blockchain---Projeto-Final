@@ -1,0 +1,47 @@
+# Node / JS
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python / venv
+.venv/
+venv/
+ENV/
+__pycache__/
+*.pyc
+
+# Build / artifacts
+artifacts/
+build/
+dist/
+*.bin
+*.bc
+
+# Remix / hardhat / temp
+.cache/
+.cache-loader/
+.cache-buidler/
+.solcover/
+coverage/
+
+# IDEs / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets / local env
+.env
+.deployed_info.json
+deployed_info.json
+*.key
+*.pem
+*.p12
+
+# compiled ABIs/bytecode you don't want versioned
+*.abi
+*.json   # careful: if you DO want some JSON (like package.json), exclude this rule or whitelist
+
+# Optional: lockfile policies (keep if desired)
+# package-lock.json
